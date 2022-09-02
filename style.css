@@ -1,0 +1,86 @@
+body {
+  background-color: hsl(217deg, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+body .container {
+  background-color: hsl(216deg, 50%, 16%);
+  width: 90%;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+}
+body .container .imageContainer {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  background-color: hsl(178deg, 100%, 50%);
+  border-radius: 10px;
+}
+body .container .imageContainer img {
+  width: 100%;
+  border-radius: 10px;
+}
+body .container .imageContainer img:hover {
+  opacity: 0.5;
+}
+body .container .imageContainer:hover {
+  background-image: url(/images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .container .imageDescription h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+body .container .imageDescription p {
+  color: hsl(215deg, 51%, 70%);
+}
+body .container .otherInfo {
+  display: flex;
+  justify-content: space-between;
+}
+body .container .otherInfo .price {
+  color: hsl(178deg, 100%, 50%);
+}
+body .container .otherInfo .days {
+  color: hsl(215deg, 51%, 70%);
+}
+body .container .otherInfo span {
+  vertical-align: text-top;
+  margin-right: 5px;
+}
+body .container .hr {
+  margin: 0 auto;
+  height: 1px;
+  width: 100%;
+  background-color: hsl(215deg, 32%, 27%);
+}
+body .container .creator {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: hsl(215deg, 51%, 70%);
+}
+body .container .creator img {
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  margin-right: 10px;
+}
+body .container .creator span {
+  color: hsl(0deg, 0%, 100%);
+}
+body .attribution {
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  width: 90%;
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
