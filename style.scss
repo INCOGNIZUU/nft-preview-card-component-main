@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
 body {
+    font-family: "Outfit", sans-serif;
     background-color: hsl(217, 54%, 11%);
     display: flex;
     justify-content: center;
@@ -15,28 +18,40 @@ body {
 
         .imageContainer {
             position: relative;
+            top: 0;
+            left: 0;
             cursor: pointer;
+            border-radius: 11px;
             display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: hsl(178, 100%, 50%);
-            border-radius: 10px;
 
-            img {
-                width: 100%;
+            .viewFirst {
                 border-radius: 10px;
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 2;
             }
-            img:hover {
+            .viewFirst:hover {
+                z-index: 0;
                 opacity: 0.5;
             }
-        }
-        .imageContainer:hover {
-            background-image: url(/images/icon-view.svg);
-            background-repeat: no-repeat;
-            background-position: center;
+            .viewHover {
+                position: absolute;
+                z-index: 1;
+            }
         }
 
         .imageDescription {
             h1 {
                 color: hsl(0, 0%, 100%);
+                cursor: pointer;
+            }
+            h1:hover {
+                color: hsl(178, 100%, 50%);
             }
             p {
                 color: hsl(215, 51%, 70%);
@@ -82,7 +97,11 @@ body {
             }
 
             span {
+                cursor: pointer;
                 color: hsl(0, 0%, 100%);
+            }
+            span:hover {
+                color: hsl(178, 100%, 50%);
             }
         }
     }
